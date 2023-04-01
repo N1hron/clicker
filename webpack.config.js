@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FileManagerPlugin = require('filemanager-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
     entry: path.join(__dirname, 'src', 'main.js'),
@@ -26,6 +27,7 @@ module.exports = {
                     },
                 },
             }),
+            new TerserPlugin(),
         ],
     },
     module: {
