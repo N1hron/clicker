@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
       target = createTarget();
 
     const data = {
-        startTime: 10000,
+        startTime: 30000,
         current: 0,
         passed: 0,
         minutesLeft: 0,
